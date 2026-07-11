@@ -5,7 +5,10 @@
 venv
 venv/*
 .env
-.verification_report.dm
+.verification_report.md
 .walkthrough.md
 .env
 *.env
+run.txt
+verification_report.md
+walkthrough.md
