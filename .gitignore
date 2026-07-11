@@ -1,0 +1,11 @@
+.env
+.env.local
+.env.*
+
+venv
+venv/*
+.env
+.verification_report.dm
+.walkthrough.md
+.env
+*.env

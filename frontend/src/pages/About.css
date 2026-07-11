@@ -1,0 +1,106 @@
+.about__hero {
+  background: linear-gradient(180deg, var(--primary-50) 0%, white 100%);
+  padding: 80px 0 64px;
+}
+
+.about__accent {
+  background: linear-gradient(135deg, var(--primary-600), var(--primary-500));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about__card {
+  text-align: center;
+}
+
+.about__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: var(--primary-50);
+  color: var(--primary-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.about__icon--purple {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.about__icon--green {
+  background: #d1fae5;
+  color: #059669;
+}
+
+/* Values */
+.about__values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.about__value {
+  text-align: center;
+}
+
+.about__value-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+/* Tech Badges */
+.about__tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.about__tech-badge {
+  padding: 10px 24px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--navy-700);
+  background: white;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.about__tech-badge:hover {
+  border-color: var(--primary-300);
+  background: var(--primary-50);
+  color: var(--primary-700);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about__hero {
+    padding: 48px 0 40px;
+  }
+  .about__grid,
+  .about__values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
