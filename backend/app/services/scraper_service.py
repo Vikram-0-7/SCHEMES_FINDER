@@ -1,5 +1,6 @@
 import asyncio
-from ddgs import DDGS
+# from ddgs import DDGS
+from duckduckgo_search import DDGS
 import httpx
 from bs4 import BeautifulSoup
 import re
